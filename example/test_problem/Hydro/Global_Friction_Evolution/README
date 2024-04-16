@@ -1,0 +1,13 @@
+Compilation flags:
+========================================
+Enable : MODEL=HYDRO, GRAVITY
+Disable: COMOVING
+
+
+Default setup:
+========================================
+
+
+Note:
+========================================
+must freeze fluid (OPT__FREEZE_FLUID             1)

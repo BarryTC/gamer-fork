@@ -1,0 +1,8 @@
+UNIT_L                  3.08567758149000e+18
+UNIT_M                  1.98850000000000e+33
+UNIT_T                  3.15569252000000e+13
+BOX_SIZE                2.00000000000000e+02         # simulation box size [UNIT_L]
+NPar_AllRank            3262137            # total number of particles
+Center_of_Mass_X        1.00000000000000e+05         # central x coordinate, i.e. simulation box center [UNIT_L]
+Center_of_Mass_Y        1.00000000000000e+05         # central x coordinate, i.e. simulation box center [UNIT_L]
+Center_of_Mass_Z        1.00000000000000e+05         # central x coordinate, i.e. simulation box center [UNIT_L]

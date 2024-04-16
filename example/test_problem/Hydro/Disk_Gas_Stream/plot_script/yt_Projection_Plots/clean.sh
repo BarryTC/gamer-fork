@@ -1,0 +1,1 @@
+rm -f Data_* Proj_Combine_* DM_* Stars_* Gas_* Output_Simulation_Info

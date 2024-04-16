@@ -1,0 +1,1 @@
+rm -f Proj_Combine_* Tidal_Stripping* Data_* Proj_Particle_Position*

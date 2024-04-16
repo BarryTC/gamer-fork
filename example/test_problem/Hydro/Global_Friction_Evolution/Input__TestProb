@@ -1,0 +1,11 @@
+Particle_Mass                9.99999338572779e-07 # simulated individual particle mass
+Perturber_Mass               1.00000000000000e-02 # individual perturber particle mass
+Central_Ini_vel_x            0.0                  # central initial x velocity [code units]
+Central_Ini_vel_y            0.0                  # central initial x velocity [code units]
+Central_Ini_vel_z            0.0                  # central initial x velocity [code units]
+Central_Ini_R_vir            1.00000000000000e+01 # initial virial radius in code units [code units]
+Central_Ini_vel_cir          3.16227766016838e-01 # circular velocity at the virial radius [code units]
+Most_Bound_Frac_CM_Cal       0.05                 # the fraction of most bound particles used to compute instantaneous CM
+OPT_beta_compute             1                    # output velocity anisotropy on-the-fly; OFF [0], ON [1]
+OPT_Auto_AMR                 1                    # set radius-dependent AMR on-the-fly; OFF [0], ON [1]
+                                                  # NEED to enable "OPT__FLAG_USER" when "OPT_Auto_AMR == 1"

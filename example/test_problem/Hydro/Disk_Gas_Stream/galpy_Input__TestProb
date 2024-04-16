@@ -1,0 +1,17 @@
+NFW_Mass_virial         1.00000000000000e+09         # virial halo mass (enclosed within NFW_R_virial) [Msun]
+NFW_Mass_total          9.99571425488536e+08         # total mass enclosed within NFW_R_max [Msun]
+NFW_R_virial            2.63000000000000e+04         # [pc]
+NFW_R_max               1.07984217282275e+05         # [pc]
+NFW_concentration       1.00000000000000e+01
+Center_of_Mass_X        2.63000000000000e+05         # central x coordinate, i.e. simulation box center [pc]
+Center_of_Mass_Y        2.63000000000000e+05         # central x coordinate, i.e. simulation box center [pc]
+Center_of_Mass_Z        2.63000000000000e+05         # central x coordinate, i.e. simulation box center [pc]
+DF_choice               3.00000000000000e+00         # Osipkov-Merritt type [1] or Isotropic [2]
+Ra                      1.00000000000000e+00         # = R_anisotropy/NFW_R_scale, applicable when DF_choice = 1
+beta_const              5.00000000000000e-01
+NPar_AllRank            1.00000000000000e+06         # total particle number
+Par_type                1.00000000000000e+00         # GAMER input particle types (for particle tagging)
+NFW_R_scale             2.63000000000000e+03         # NFW profile scale radius [pc]
+NFW_Rho0                2.93822640608859e-03         # [Msun/pc^3]
+R_anisotropy            2.63000000000000e+03         # anisotropy radius for the Osipkov-Merritt DF
+ParM                    9.99571425488536e+02         # individual particle mass [Msun]

@@ -1,0 +1,12 @@
+Box_Size                2.104000e+06         # [pc]
+Subhalo_Center_X        0.000000e+00         # [pc]; relative to the simulation box center (the CM of host halo)
+Subhalo_Center_Y        0.000000e+00         # [pc]; relative to the simulation box center (the CM of host halo)
+Subhalo_Vel_X           0.000000e+00         # [code units]
+Subhalo_Vel_Y           0.000000e+00         # [code units]
+Subhalo_Vel_Z           0.000000e+00         # [code units]
+Subhalo_Ini_vel_cir     1.307797e+01         # [code units]; circular velocity at the subhalo virial radius
+Orbit_Enclosed_Mass     0.000000e+00         # [Msun]; enclosed within the initial circular orbital radius
+Subhalo_Dis_Origin      0.000000e+00         # [pc]; apocenter distance to the origin of host halo
+R_per_output            0.000000e+00         # [pc]; pericenter distance to the origin of host halo
+Eccentricity            0.000000e+00         # orbital eccentricity
+Subhalo_Vel_Mag         0.000000e+00         # [pc/Myr]

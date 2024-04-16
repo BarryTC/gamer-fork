@@ -1,0 +1,1 @@
+rm -f Combine_* Proj_Star_Gas*

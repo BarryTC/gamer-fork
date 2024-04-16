@@ -1,0 +1,10 @@
+M_gas_disk                   2.3e10               # total mass of gas disk
+r_disk_scale                 6.0e3                # scale radius of gas disk
+r_disk_cut                   1.5e4                # hard truncation radius of gas disk
+h_disk_scale                 4.0e2                # scale height of gas disk
+h_disk_cut                   3.0e3                # hard truncation height of gas disk
+T_disk                       1.0e4                # initial temperature of gas disk
+T_ambient                    1.0e6                # ambient temperature of gas background
+RotVel_Table_File            RotCurve_IC_List     # filename of the DM+stars rotation curve table
+OPT_Auto_AMR                 0                    # set radius-dependent AMR on-the-fly; OFF [0], ON [1]
+                                                  # NEED to enable "OPT__FLAG_USER" when "OPT_Auto_AMR == 1"

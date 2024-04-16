@@ -1,0 +1,13 @@
+Compilation flags:
+========================================
+Enable : MODEL=HYDRO, GRAVITY
+Disable: COMOVING
+
+
+Default setup:
+========================================
+
+
+Note:
+========================================
+python3 configure.py --machine=... --gpu_arch=AMPERE --model=HYDRO --gravity=true --particle=true --nlevel=12 --max_patch=1000000 --gpu=true --store_par_acc=true --hdf5=true --par_attribute=5 --fftw=FFTW3 --mpi=true --double=true --flu_scheme=MHM --slope=PLM --dual=DE_ENPY
