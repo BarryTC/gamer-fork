@@ -31,6 +31,24 @@
 #define TURING       6
 #define AMPERE       7
 
+#if   ( GPU_COMPUTE_CAPABILITY >= 200  &&  GPU_COMPUTE_CAPABILITY < 300 )
+# define GPU_ARCH FERMI
+#elif ( GPU_COMPUTE_CAPABILITY >= 300  &&  GPU_COMPUTE_CAPABILITY < 500 )
+# define GPU_ARCH KEPLER
+#elif ( GPU_COMPUTE_CAPABILITY >= 500  &&  GPU_COMPUTE_CAPABILITY < 600 )
+# define GPU_ARCH MAXWELL
+#elif ( GPU_COMPUTE_CAPABILITY >= 600  &&  GPU_COMPUTE_CAPABILITY < 700 )
+# define GPU_ARCH PASCAL
+#elif ( GPU_COMPUTE_CAPABILITY >= 700  &&  GPU_COMPUTE_CAPABILITY < 750 )
+# define GPU_ARCH VOLTA
+#elif ( GPU_COMPUTE_CAPABILITY >= 750  &&  GPU_COMPUTE_CAPABILITY < 800 )
+# define GPU_ARCH TURING
+#elif ( GPU_COMPUTE_CAPABILITY >= 800  &&  GPU_COMPUTE_CAPABILITY < 890 )
+# define GPU_ARCH AMPERE
+#elif ( defined GPU )
+# error : ERROR : Unknown GPU_COMPUTE_CAPABILITY !!
+#endif
+
 
 // models
 #define HYDRO        1
@@ -511,10 +529,10 @@
 #  define  PAR_NTYPE                4
 
 // particle type indices (must be in the range 0<=index<PAR_NTYPE)
-#  define  PTYPE_TRACER          (real)0
-#  define  PTYPE_GENERIC_MASSIVE (real)1
-#  define  PTYPE_DARK_MATTER     (real)2
-#  define  PTYPE_STAR            (real)3
+#  define  PTYPE_TRACER          (real_par)0
+#  define  PTYPE_GENERIC_MASSIVE (real_par)1
+#  define  PTYPE_DARK_MATTER     (real_par)2
+#  define  PTYPE_STAR            (real_par)3
 
 # ifdef GRAVITY
 #  define MASSIVE_PARTICLES
@@ -910,6 +928,11 @@
 #  define MPI_GAMER_REAL MPI_FLOAT
 #endif
 
+#ifdef FLOAT8_PAR
+#  define MPI_GAMER_REAL_PAR MPI_DOUBLE
+#else
+#  define MPI_GAMER_REAL_PAR MPI_FLOAT
+#endif
 
 
 
